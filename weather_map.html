@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_588df51052647ee341831fcbc920cd92 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_588df51052647ee341831fcbc920cd92" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_588df51052647ee341831fcbc920cd92 = L.map(
+                "map_588df51052647ee341831fcbc920cd92",
+                {
+                    center: [39.8283, -98.5795],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 4,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_93b7fc2e62bb63bdd4b3faa9d4a42bee = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_588df51052647ee341831fcbc920cd92);
+        
+    
+            var marker_b19b9a8f530196cc1374f889d709df4f = L.marker(
+                [29.8826436, -97.9405828],
+                {}
+            ).addTo(map_588df51052647ee341831fcbc920cd92);
+        
+    
+        var popup_869430f8c97d0829d6acb896c36be8aa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c5ce5a932005aa73d97fa59bca080e61 = $(`<div id="html_c5ce5a932005aa73d97fa59bca080e61" style="width: 100.0%; height: 100.0%;">Temperature: 71.67°F<br>Humidity: 32%<br>Wind Speed: 18.41 mph<br>Description: clear sky</div>`)[0];
+                popup_869430f8c97d0829d6acb896c36be8aa.setContent(html_c5ce5a932005aa73d97fa59bca080e61);
+            
+        
+
+        marker_b19b9a8f530196cc1374f889d709df4f.bindPopup(popup_869430f8c97d0829d6acb896c36be8aa)
+        ;
+
+        
+    
+    
+            var marker_071ec70d7c304154e9801d1051e0a575 = L.marker(
+                [38.951883, -92.3337366],
+                {}
+            ).addTo(map_588df51052647ee341831fcbc920cd92);
+        
+    
+        var popup_6515590e7ddb75f09372ea6dc2e45b6a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f1165c4d1149bccf36fde703ed67ead3 = $(`<div id="html_f1165c4d1149bccf36fde703ed67ead3" style="width: 100.0%; height: 100.0%;">Temperature: 42.28°F<br>Humidity: 90%<br>Wind Speed: 17.27 mph<br>Description: overcast clouds</div>`)[0];
+                popup_6515590e7ddb75f09372ea6dc2e45b6a.setContent(html_f1165c4d1149bccf36fde703ed67ead3);
+            
+        
+
+        marker_071ec70d7c304154e9801d1051e0a575.bindPopup(popup_6515590e7ddb75f09372ea6dc2e45b6a)
+        ;
+
+        
+    
+    
+            var marker_8921ca36e064eaa71205b4074183ec32 = L.marker(
+                [37.9509324, -91.7708076],
+                {}
+            ).addTo(map_588df51052647ee341831fcbc920cd92);
+        
+    
+        var popup_6c6e7452f00d5f61a3e923539dbd50c0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_747564e1d8ca345bde80843c09a687d3 = $(`<div id="html_747564e1d8ca345bde80843c09a687d3" style="width: 100.0%; height: 100.0%;">Temperature: 39.65°F<br>Humidity: 93%<br>Wind Speed: 18.41 mph<br>Description: overcast clouds</div>`)[0];
+                popup_6c6e7452f00d5f61a3e923539dbd50c0.setContent(html_747564e1d8ca345bde80843c09a687d3);
+            
+        
+
+        marker_8921ca36e064eaa71205b4074183ec32.bindPopup(popup_6c6e7452f00d5f61a3e923539dbd50c0)
+        ;
+
+        
+    
+    
+            var marker_cac0df0ae298e8cf7ea479b9f2a474bb = L.marker(
+                [39.1134562, -94.626497],
+                {}
+            ).addTo(map_588df51052647ee341831fcbc920cd92);
+        
+    
+        var popup_8dfe8c23c5dd221c99a2c39b359b652b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7da3c1d9c3d9fb5d31d217f25167948f = $(`<div id="html_7da3c1d9c3d9fb5d31d217f25167948f" style="width: 100.0%; height: 100.0%;">Temperature: 47.68°F<br>Humidity: 73%<br>Wind Speed: 9.22 mph<br>Description: broken clouds</div>`)[0];
+                popup_8dfe8c23c5dd221c99a2c39b359b652b.setContent(html_7da3c1d9c3d9fb5d31d217f25167948f);
+            
+        
+
+        marker_cac0df0ae298e8cf7ea479b9f2a474bb.bindPopup(popup_8dfe8c23c5dd221c99a2c39b359b652b)
+        ;
+
+        
+    
+    
+            var marker_12d795da9a58243ab980f2e4afd6699b = L.marker(
+                [38.6280278, -90.1910154],
+                {}
+            ).addTo(map_588df51052647ee341831fcbc920cd92);
+        
+    
+        var popup_4ea216132d0cc19086a78af244b29bdf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_507dd5c80335d2f9c029f332c7100a10 = $(`<div id="html_507dd5c80335d2f9c029f332c7100a10" style="width: 100.0%; height: 100.0%;">Temperature: 41.04°F<br>Humidity: 94%<br>Wind Speed: 28.77 mph<br>Description: moderate rain</div>`)[0];
+                popup_4ea216132d0cc19086a78af244b29bdf.setContent(html_507dd5c80335d2f9c029f332c7100a10);
+            
+        
+
+        marker_12d795da9a58243ab980f2e4afd6699b.bindPopup(popup_4ea216132d0cc19086a78af244b29bdf)
+        ;
+
+        
+    
+    
+            var marker_42fa08e0202117b53f37b50cbbcc4073 = L.marker(
+                [35.4729886, -97.5170536],
+                {}
+            ).addTo(map_588df51052647ee341831fcbc920cd92);
+        
+    
+        var popup_e352fcdffe0b91217137fd123026255f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ac6357e8bf87d07286899a505bef4c78 = $(`<div id="html_ac6357e8bf87d07286899a505bef4c78" style="width: 100.0%; height: 100.0%;">Temperature: 56.46°F<br>Humidity: 29%<br>Wind Speed: 17.27 mph<br>Description: clear sky</div>`)[0];
+                popup_e352fcdffe0b91217137fd123026255f.setContent(html_ac6357e8bf87d07286899a505bef4c78);
+            
+        
+
+        marker_42fa08e0202117b53f37b50cbbcc4073.bindPopup(popup_e352fcdffe0b91217137fd123026255f)
+        ;
+
+        
+    
+    
+            var marker_055023b7808e9dc45a62d17ffd427480 = L.marker(
+                [39.049011, -95.677556],
+                {}
+            ).addTo(map_588df51052647ee341831fcbc920cd92);
+        
+    
+        var popup_948c20ca8d84dd819488ca9cc7515656 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6e46c46fc458f962ddeee93542cca5d8 = $(`<div id="html_6e46c46fc458f962ddeee93542cca5d8" style="width: 100.0%; height: 100.0%;">Temperature: 52.52°F<br>Humidity: 61%<br>Wind Speed: 5.75 mph<br>Description: clear sky</div>`)[0];
+                popup_948c20ca8d84dd819488ca9cc7515656.setContent(html_6e46c46fc458f962ddeee93542cca5d8);
+            
+        
+
+        marker_055023b7808e9dc45a62d17ffd427480.bindPopup(popup_948c20ca8d84dd819488ca9cc7515656)
+        ;
+
+        
+    
+    
+            var marker_440465d7854c3975961ec0dd6cdd966b = L.marker(
+                [36.1622767, -86.7742984],
+                {}
+            ).addTo(map_588df51052647ee341831fcbc920cd92);
+        
+    
+        var popup_16e2f2dc974dfa86b0cf7a8ba44214c7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3ffaa69dd3787a0674882a472f4e3fd2 = $(`<div id="html_3ffaa69dd3787a0674882a472f4e3fd2" style="width: 100.0%; height: 100.0%;">Temperature: 71.74°F<br>Humidity: 60%<br>Wind Speed: 21 mph<br>Description: broken clouds</div>`)[0];
+                popup_16e2f2dc974dfa86b0cf7a8ba44214c7.setContent(html_3ffaa69dd3787a0674882a472f4e3fd2);
+            
+        
+
+        marker_440465d7854c3975961ec0dd6cdd966b.bindPopup(popup_16e2f2dc974dfa86b0cf7a8ba44214c7)
+        ;
+
+        
+    
+    
+            var marker_5f6e4ba1c8e1083b598561c2516ac8ba = L.marker(
+                [36.1563122, -95.9927516],
+                {}
+            ).addTo(map_588df51052647ee341831fcbc920cd92);
+        
+    
+        var popup_92ca4ba57f52ed5d4f017c0a9d2f7697 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_434a4bca7b7d029d9d67db918dc2df0c = $(`<div id="html_434a4bca7b7d029d9d67db918dc2df0c" style="width: 100.0%; height: 100.0%;">Temperature: 50.65°F<br>Humidity: 72%<br>Wind Speed: 12.66 mph<br>Description: broken clouds</div>`)[0];
+                popup_92ca4ba57f52ed5d4f017c0a9d2f7697.setContent(html_434a4bca7b7d029d9d67db918dc2df0c);
+            
+        
+
+        marker_5f6e4ba1c8e1083b598561c2516ac8ba.bindPopup(popup_92ca4ba57f52ed5d4f017c0a9d2f7697)
+        ;
+
+        
+    
+    
+            var marker_e1552bede805bd8aafdb0a6347353b4a = L.marker(
+                [39.7392364, -104.984862],
+                {}
+            ).addTo(map_588df51052647ee341831fcbc920cd92);
+        
+    
+        var popup_4c6486af2694bfe476f7795943215aab = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bf93b56ccf7700868e8d2723b72a0244 = $(`<div id="html_bf93b56ccf7700868e8d2723b72a0244" style="width: 100.0%; height: 100.0%;">Temperature: 47.3°F<br>Humidity: 32%<br>Wind Speed: 5.01 mph<br>Description: overcast clouds</div>`)[0];
+                popup_4c6486af2694bfe476f7795943215aab.setContent(html_bf93b56ccf7700868e8d2723b72a0244);
+            
+        
+
+        marker_e1552bede805bd8aafdb0a6347353b4a.bindPopup(popup_4c6486af2694bfe476f7795943215aab)
+        ;
+
+        
+    
+    
+            var marker_762c04da925ad2160b169cc4bf8c0598 = L.marker(
+                [41.5235808, -90.5770967],
+                {}
+            ).addTo(map_588df51052647ee341831fcbc920cd92);
+        
+    
+        var popup_fa58ef76edf39d1a6efc7af5aed68ace = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_62d6946e3eba474121c69e8ebd3a3d95 = $(`<div id="html_62d6946e3eba474121c69e8ebd3a3d95" style="width: 100.0%; height: 100.0%;">Temperature: 40.78°F<br>Humidity: 74%<br>Wind Speed: 20.71 mph<br>Description: clear sky</div>`)[0];
+                popup_fa58ef76edf39d1a6efc7af5aed68ace.setContent(html_62d6946e3eba474121c69e8ebd3a3d95);
+            
+        
+
+        marker_762c04da925ad2160b169cc4bf8c0598.bindPopup(popup_fa58ef76edf39d1a6efc7af5aed68ace)
+        ;
+
+        
+    
+    
+            var marker_335f992249bd9b4b96d263b2712acd5d = L.marker(
+                [41.6612561, -91.5299106],
+                {}
+            ).addTo(map_588df51052647ee341831fcbc920cd92);
+        
+    
+        var popup_ebabc395550849d12ad7379a1cdb4ab1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9244a019c68b80e6e5dd71c7db9d3536 = $(`<div id="html_9244a019c68b80e6e5dd71c7db9d3536" style="width: 100.0%; height: 100.0%;">Temperature: 43.95°F<br>Humidity: 65%<br>Wind Speed: 10.36 mph<br>Description: clear sky</div>`)[0];
+                popup_ebabc395550849d12ad7379a1cdb4ab1.setContent(html_9244a019c68b80e6e5dd71c7db9d3536);
+            
+        
+
+        marker_335f992249bd9b4b96d263b2712acd5d.bindPopup(popup_ebabc395550849d12ad7379a1cdb4ab1)
+        ;
+
+        
+    
+    
+            var marker_3db99202654d5f4f5250388551bd1b5c = L.marker(
+                [39.8454163, -88.9524151],
+                {}
+            ).addTo(map_588df51052647ee341831fcbc920cd92);
+        
+    
+        var popup_28a339c15dd50b0ae90bd200e42a6dca = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ad32518cb9062a641bdfc345b3c9635a = $(`<div id="html_ad32518cb9062a641bdfc345b3c9635a" style="width: 100.0%; height: 100.0%;">Temperature: 38.5°F<br>Humidity: 93%<br>Wind Speed: 37.98 mph<br>Description: moderate rain</div>`)[0];
+                popup_28a339c15dd50b0ae90bd200e42a6dca.setContent(html_ad32518cb9062a641bdfc345b3c9635a);
+            
+        
+
+        marker_3db99202654d5f4f5250388551bd1b5c.bindPopup(popup_28a339c15dd50b0ae90bd200e42a6dca)
+        ;
+
+        
+    
+    
+            var marker_63cec1d9c60a964f505fe2801c27dd1b = L.marker(
+                [35.8460396, -86.3921096],
+                {}
+            ).addTo(map_588df51052647ee341831fcbc920cd92);
+        
+    
+        var popup_bda60f4da85f1479a993afd11461c2e2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9de71d34f40fde9ad6c07f765fc7cb9e = $(`<div id="html_9de71d34f40fde9ad6c07f765fc7cb9e" style="width: 100.0%; height: 100.0%;">Temperature: 69.33°F<br>Humidity: 71%<br>Wind Speed: 21.85 mph<br>Description: broken clouds</div>`)[0];
+                popup_bda60f4da85f1479a993afd11461c2e2.setContent(html_9de71d34f40fde9ad6c07f765fc7cb9e);
+            
+        
+
+        marker_63cec1d9c60a964f505fe2801c27dd1b.bindPopup(popup_bda60f4da85f1479a993afd11461c2e2)
+        ;
+
+        
+    
+    
+            var marker_168c3ac3caa684d108a406e7c3c7eb8c = L.marker(
+                [39.1273653, -97.6568094],
+                {}
+            ).addTo(map_588df51052647ee341831fcbc920cd92);
+        
+    
+        var popup_63dd932de4e608add1e7c2ef91e78594 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_553bbf02738a78b3e5a9e4556fa0ec46 = $(`<div id="html_553bbf02738a78b3e5a9e4556fa0ec46" style="width: 100.0%; height: 100.0%;">Temperature: 56.93°F<br>Humidity: 33%<br>Wind Speed: 8.41 mph<br>Description: clear sky</div>`)[0];
+                popup_63dd932de4e608add1e7c2ef91e78594.setContent(html_553bbf02738a78b3e5a9e4556fa0ec46);
+            
+        
+
+        marker_168c3ac3caa684d108a406e7c3c7eb8c.bindPopup(popup_63dd932de4e608add1e7c2ef91e78594)
+        ;
+
+        
+    
+    
+            var marker_a49ce0373bb3d3faff86eff0d0300987 = L.marker(
+                [35.80278, -90.930481],
+                {}
+            ).addTo(map_588df51052647ee341831fcbc920cd92);
+        
+    
+        var popup_6fbd4581138f247135065c8c2373ab3b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0058393d6df276d18d1636631cd8fd27 = $(`<div id="html_0058393d6df276d18d1636631cd8fd27" style="width: 100.0%; height: 100.0%;">Temperature: 60.57°F<br>Humidity: 72%<br>Wind Speed: 22.5 mph<br>Description: broken clouds</div>`)[0];
+                popup_6fbd4581138f247135065c8c2373ab3b.setContent(html_0058393d6df276d18d1636631cd8fd27);
+            
+        
+
+        marker_a49ce0373bb3d3faff86eff0d0300987.bindPopup(popup_6fbd4581138f247135065c8c2373ab3b)
+        ;
+
+        
+    
+    
+            var marker_a4bfe7ed60e19f9d033cd358b835a09a = L.marker(
+                [44.1858193, -88.462609],
+                {}
+            ).addTo(map_588df51052647ee341831fcbc920cd92);
+        
+    
+        var popup_0cfa966812661ab3b5959cbd25c16408 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_68bdd10fc7c468392c141896479bfd94 = $(`<div id="html_68bdd10fc7c468392c141896479bfd94" style="width: 100.0%; height: 100.0%;">Temperature: 37.47°F<br>Humidity: 77%<br>Wind Speed: 5.75 mph<br>Description: broken clouds</div>`)[0];
+                popup_0cfa966812661ab3b5959cbd25c16408.setContent(html_68bdd10fc7c468392c141896479bfd94);
+            
+        
+
+        marker_a4bfe7ed60e19f9d033cd358b835a09a.bindPopup(popup_0cfa966812661ab3b5959cbd25c16408)
+        ;
+
+        
+    
+    
+            var marker_19fe8a84d8144b966ad2afcda4897e11 = L.marker(
+                [30.2711286, -97.7436995],
+                {}
+            ).addTo(map_588df51052647ee341831fcbc920cd92);
+        
+    
+        var popup_17b14b848dcb31f57d840a8c668b0308 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_96172c1b53d931fc4eb63584fa68b03c = $(`<div id="html_96172c1b53d931fc4eb63584fa68b03c" style="width: 100.0%; height: 100.0%;">Temperature: 70.2°F<br>Humidity: 35%<br>Wind Speed: 11.5 mph<br>Description: clear sky</div>`)[0];
+                popup_17b14b848dcb31f57d840a8c668b0308.setContent(html_96172c1b53d931fc4eb63584fa68b03c);
+            
+        
+
+        marker_19fe8a84d8144b966ad2afcda4897e11.bindPopup(popup_17b14b848dcb31f57d840a8c668b0308)
+        ;
+
+        
+    
+</script>
+</html>
